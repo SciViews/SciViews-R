@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<meta name="description" content="SciViews-R"/>
+<meta name="keywords" content="SciViews, R"/>
+<meta name="author" content="Philippe Grosjean"/>
+<link rel="stylesheet" type="text/css" href="../_style/style.css" media="screen"/>
+<title>SciViews-R</title>
+</head>
+
+<body>
+
+	<div class="main">
+
+<h1>SciViews R</h1>
+
+		<div class="content">
+			<br/>
+			<cite>SciViews-R is a series of packages providing a GUI API on top of R, a free (Open Source) statistical software based on the S language.</cite>
+
+
+			<h1>Installation</h1>
+
+			<p>You must first install R from <a href="http://cran.r-project.org">CRAN</a> ("Comprehensive R Archive Network"). R can be installed
+			on different systems (Linux, Mac OS X, Windows, ...) and binaires/installers are provided for several OSes.</p>
+
+			<p>To install SciViews-R from CRAN, you simply enter the following
+			instruction at the R command line on a machine connected to the Internet:</p>
+
+<code>SciViewsPackages <- c("SciViews", "svMisc", "svSocket", "svGUI", "svIDE",
+    "svKomodo", "svDialogs", "svSweave", "svTools", "svUnit", "svWidgets", "tcltk2")
+install.packages(SciViewsPackages)</code>
+
+			<p>For a short description of the packages in SciViews-R, see hereunder.
+			
+			<h1>Where to start...</h1>
+
+			<p>Once the SciViews-R additional packages are installed in R, here is how you can load one of
+			these packages; type in R:</p>
+
+<code>library(svDialogs)</code>
+
+			<p>You have now access to the function in that package. Try for instance:</p>
+
+<code>display(guiDlg("SciViews-R", "My first dialog box with SciViews-R"))</code>
+
+			<p>You should then look at the R online help, and browse for help and examples for the various 'svXXXX' packages:</p>
+
+<code>help.start()</code>
+
+			<p>Here is a short description of the SciViews-R packages:</p>
+			<ul>
+				<li><b>SciViews:</b> Main package</li>
+				<li><b>svMisc:</b> Miscellaneous functions</li>
+				<li><b>svSocket:</b> R Socket Server</li>
+				<li><b>svGUI:</b> Functions to manage GUI client</li>
+				<li><b>svIDE:</b> IDE and code editor functions</li>
+				<li><b>svKomodo:</b> Functions to interface with Komodo Edit/IDE</li>
+				<li><b>svDialogs:</b>Dialog boxes</li>
+				<li><b>svSweave:</b>Sweave extensions</li>
+				<li><b>svTools:</b> Tools for code analysis</li>
+				<li><b>svUnit:</b> Unit testing</li>
+				<li><b>svWidgets:</b> Widgets & Windows</li>
+				<li><b>tcltk2:</b> Additional Tcl/Tk code and widgets</li>
+			</ul>
+
+			<p>There is a <a href="http://www.youtube.com/watch?v=rvT8XThGA8o">video</a> demonstrating the use of svSocket for communication between different R processes.</p>
+			
+			<p>Note: the package <b>svDialogs</b> can manage (custom) menus for a R console under Linux/Unix,
+			but you have to install a little Gtk2 program (<b>ctxmenu</b>) to display these menus on screen. Follow instruction
+			in this <a href="ctxmenu.zip">zipped file</a>. This little program is derived from <b>gtkMenu</b>.</p>
+			
+			<p>Note2: the package <b>tcltk2</b> allows for DDE interaction with R under Windows. The help page
+			indicates the use of <b>execdde.exe</b> utility that is no longer distributed with the package,
+			but can be downloaded from <a href="execdde.zip">here</a>. Unzip the file and place <b>execdde.exe</b>
+			in a directory that is in your path (for instance, c:\Windows\system32).</p>
+
+			<h1>Question? Suggestion? Bug report?</h1>
+
+			<p>If you have any question about SciViews-R, send an email to
+			<a href="mailto:support@sciviews.org">support@sciviews.org</a>.</p>
+
+
+		</div>
+
+
+		<div class="clearer"><span></span></div>
+
+	</div>
+
+</div>
+
+<div class="footer"><a href="index.html">SciViews.org</a>, copyright &copy; 2008-2012
+  <a href="mailto:phgrosjean@sciviews.org">Philippe Grosjean</a>.
+</div>
+
+</body>
+
+</html>
