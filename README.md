@@ -1,2 +1,2 @@
 # SciViews-R
-R-related SciViews contributions
+Web pages for R-related SciViews contributions
